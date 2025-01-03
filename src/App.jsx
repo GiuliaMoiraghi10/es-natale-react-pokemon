@@ -22,13 +22,13 @@ function App() {
 
   return (
     <>
-      <div className='container'>
-        <h1>Pokémon</h1>
+      <div className='container-title'>
+        <h1 className='title'>Pokémon</h1>
       </div>
-      <div>
-        <ul>
+      <div className='container'>
+        <ul className='characters'>
           {characters.map((character) => (
-            <li key={character.id}>{character.name}</li>
+            <li className='character' key={character.id}>{character.name}</li>
           ))}
         </ul>
       </div>

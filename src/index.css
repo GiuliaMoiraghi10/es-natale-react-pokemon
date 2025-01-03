@@ -1,9 +1,53 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 1rem;
+  list-style: none;
+}
+
+.character {
+  background-color: black;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.character:hover {
+  background-color: rgb(116, 131, 134);
+}
+
+.title {
+  background-color: rgb(18, 139, 187);
+  color: white;
+  padding: 30px;
+}
+
+.container-title {
+  width: 100%;
+  border-bottom: 20px;
 }
